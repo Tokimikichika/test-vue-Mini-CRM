@@ -1,0 +1,151 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer components {
+	.router-link-active {
+		@apply bg-blue-50 text-blue-700;
+	}
+	.client-form .p-inputtext,
+	.client-form .p-dropdown,
+	.clients-list .p-inputtext,
+	.clients-list .p-dropdown {
+		box-shadow: 0 0 0 1px rgb(209 213 219);
+	}
+
+	.client-form .p-dropdown .p-dropdown-label,
+	.client-form .p-dropdown .p-dropdown-trigger,
+	.clients-list .p-dropdown .p-dropdown-label,
+	.clients-list .p-dropdown .p-dropdown-trigger {
+		padding: 0.5rem 0.5rem;
+	}
+	.clients-list .p-paginator-rpp-options {
+		padding: 0 !important;
+		height: 40px !important;
+	}
+	.clients-list .p-paginator-rpp-options .p-dropdown-trigger {
+		padding: 0.5rem !important;
+	}
+	.clients-list .p-sortable-column-icon {
+		display: none !important;
+	}
+	.client-form .p-inputtext:focus,
+	.client-form .p-dropdown:focus,
+	.client-form .p-dropdown.p-focus,
+	.clients-list .p-inputtext:focus,
+	.clients-list .p-dropdown:focus,
+	.clients-list .p-dropdown.p-focus {
+		box-shadow: 0 0 0 2px rgb(59 130 246);
+	}
+	.client-form .p-button {
+		border-radius: 0.5rem;
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05);
+		transition: box-shadow 0.2s, background-color 0.2s, border-color 0.2s;
+		font-weight: 500;
+		padding: 0.5rem 1.25rem;
+	}
+	.client-form .p-button:not(.p-button-outlined):not(.p-button-text) {
+		background: linear-gradient(135deg, rgb(59 130 246), rgb(37 99 235));
+		border: 1px solid rgb(37 99 235);
+		color: white;
+	}
+	.client-form .p-button:not(.p-button-outlined):not(.p-button-text):hover:not(:disabled) {
+		background: linear-gradient(135deg, rgb(37 99 235), rgb(29 78 216));
+		box-shadow: 0 4px 6px -1px rgb(59 130 246 / 0.4);
+	}
+	.client-form .p-button.p-button-outlined {
+		border: 1px solid rgb(107 114 128);
+		color: rgb(75 85 99);
+		background: transparent;
+	}
+	.client-form .p-button.p-button-outlined:hover:not(:disabled) {
+		background: rgb(243 244 246);
+		border-color: rgb(75 85 99);
+		color: rgb(55 65 81);
+		box-shadow: 0 2px 4px -2px rgb(0 0 0 / 0.1);
+	}
+	.p-confirm-dialog-icon,
+	.p-confirm-dialog .pi-exclamation-triangle {
+		font-size: 1.5rem !important;
+		color: rgb(245 158 11) !important;
+	}
+	.p-confirm-dialog .pi-exclamation-triangle::before {
+		color: rgb(245 158 11) !important;
+	}
+	.p-confirm-dialog-reject.p-button-outlined.p-button-secondary {
+		border-radius: 0.5rem !important;
+		box-shadow: none !important;
+		font-weight: 500 !important;
+		padding: 0.5rem 1.25rem !important;
+		border: 1px solid rgb(156 163 175) !important;
+		background: transparent !important;
+		color: rgb(75 85 99) !important;
+		transition: all 0.2s !important;
+	}
+	.p-confirm-dialog-reject.p-button-outlined.p-button-secondary:hover {
+		background: rgb(243 244 246) !important;
+		border-color: rgb(107 114 128) !important;
+	}
+	.p-confirm-dialog-accept,
+	.p-confirm-dialog-accept.p-button-danger {
+		border-radius: 0.5rem !important;
+		box-shadow: 0 1px 2px 0 rgb(0 0 0 / 0.05) !important;
+		font-weight: 500 !important;
+		padding: 0.5rem 1.25rem !important;
+		background: linear-gradient(135deg, rgb(239 68 68), rgb(220 38 38)) !important;
+		border: 1px solid rgb(185 28 28) !important;
+		color: white !important;
+		transition: all 0.2s !important;
+	}
+	.p-confirm-dialog-accept:hover,
+	.p-confirm-dialog-accept.p-button-danger:hover {
+		background: linear-gradient(135deg, rgb(220 38 38), rgb(185 28 28)) !important;
+		box-shadow: 0 4px 6px -1px rgb(239 68 68 / 0.4) !important;
+	}
+}
+
+span.pi-exclamation-triangle.p-confirm-dialog-icon {
+	font-size: 1.5rem !important;
+	color: rgb(245 158 11) !important;
+}
+span.pi-exclamation-triangle.p-confirm-dialog-icon::before {
+	color: inherit !important;
+}
+
+.clients-list .btn-delete-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	padding: 0;
+	border: none;
+	background: transparent;
+	color: rgb(239 68 68);
+	border-radius: 50%;
+	cursor: pointer;
+	transition: opacity 0.2s;
+}
+.clients-list .btn-delete-icon:hover {
+	color: rgb(220 38 38);
+}
+.clients-list .btn-delete-icon:active {
+	opacity: 0.7;
+}
+.clients-list .btn-edit-icon {
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	width: 2rem;
+	height: 2rem;
+	border-radius: 50%;
+	color: rgb(107 114 128);
+	text-decoration: none;
+	transition: color 0.2s, opacity 0.2s;
+}
+.clients-list .btn-edit-icon:hover {
+	color: rgb(75 85 99);
+}
+.clients-list .btn-edit-icon:active {
+	opacity: 0.7;
+}

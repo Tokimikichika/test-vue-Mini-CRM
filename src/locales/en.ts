@@ -1,0 +1,85 @@
+export default {
+	nav: {
+		clients: 'Clients',
+		newClient: 'New client',
+	},
+	clientsList: {
+		title: 'Clients',
+		searchPlaceholder: 'Search by name or email...',
+		allStatuses: 'All statuses',
+		emptyList: 'Client list is empty. Add the first client.',
+		noResults: 'No clients match the filters',
+		loading: 'Loading clients...',
+		columns: {
+			name: 'Name',
+			email: 'Email',
+			phone: 'Phone',
+			status: 'Status',
+			actions: 'Actions',
+		},
+		tooltips: {
+			edit: 'Edit',
+			delete: 'Delete',
+		},
+		paginator: 'Showing {first} - {last} of {totalRecords}',
+		confirmDelete: {
+			header: 'Delete confirmation',
+			message: 'Delete client "{name}"?',
+			reject: 'Cancel',
+			accept: 'Delete',
+		},
+		toast: {
+			deleted: 'Client deleted',
+			deletedDetail: 'Client {name} successfully deleted',
+			error: 'Error',
+			deleteError: 'Failed to delete client',
+		},
+	},
+	clientForm: {
+		back: 'Back',
+		newTitle: 'New client',
+		editTitle: 'Edit client',
+		labels: {
+			name: 'Name',
+			email: 'Email',
+			phone: 'Phone',
+			status: 'Status',
+		},
+		placeholders: {
+			status: 'Select status',
+		},
+		errors: {
+			nameRequired: 'Enter name',
+			emailRequired: 'Enter email',
+			emailInvalid: 'Invalid email format',
+			phoneRequired: 'Enter phone',
+			statusRequired: 'Select status',
+		},
+		buttons: {
+			save: 'Save',
+			cancel: 'Cancel',
+		},
+		toast: {
+			updated: 'Client updated',
+			updatedDetail: 'Changes saved',
+			created: 'Client created',
+			createdDetail: 'New client successfully added',
+			error: 'Error',
+			saveError: 'Failed to save client',
+			notFound: 'Client not found',
+			redirectToList: 'Redirecting to client list',
+		},
+	},
+	status: {
+		all: 'All statuses',
+		new: 'New',
+		active: 'Active',
+		blocked: 'Blocked',
+	},
+	errors: {
+		loadClients: 'Failed to load clients',
+		createClient: 'Failed to create client',
+		updateClient: 'Failed to update client',
+		deleteClient: 'Failed to delete client',
+	},
+} as const;

@@ -1,0 +1,85 @@
+export default {
+	nav: {
+		clients: 'Клиенты',
+		newClient: 'Новый клиент',
+	},
+	clientsList: {
+		title: 'Клиенты',
+		searchPlaceholder: 'Поиск по имени или email...',
+		allStatuses: 'Все статусы',
+		emptyList: 'Список клиентов пуст. Добавьте первого клиента.',
+		noResults: 'Нет клиентов по заданным фильтрам',
+		loading: 'Загрузка клиентов...',
+		columns: {
+			name: 'Имя',
+			email: 'Email',
+			phone: 'Телефон',
+			status: 'Статус',
+			actions: 'Действия',
+		},
+		tooltips: {
+			edit: 'Редактировать',
+			delete: 'Удалить',
+		},
+		paginator: 'Показано {first} - {last} из {totalRecords}',
+		confirmDelete: {
+			header: 'Подтверждение удаления',
+			message: 'Удалить клиента "{name}"?',
+			reject: 'Отмена',
+			accept: 'Удалить',
+		},
+		toast: {
+			deleted: 'Клиент удалён',
+			deletedDetail: 'Клиент {name} успешно удалён',
+			error: 'Ошибка',
+			deleteError: 'Не удалось удалить клиента',
+		},
+	},
+	clientForm: {
+		back: 'Назад',
+		newTitle: 'Новый клиент',
+		editTitle: 'Редактирование клиента',
+		labels: {
+			name: 'Имя',
+			email: 'Email',
+			phone: 'Телефон',
+			status: 'Статус',
+		},
+		placeholders: {
+			status: 'Выберите статус',
+		},
+		errors: {
+			nameRequired: 'Введите имя',
+			emailRequired: 'Введите email',
+			emailInvalid: 'Некорректный формат email',
+			phoneRequired: 'Введите телефон',
+			statusRequired: 'Выберите статус',
+		},
+		buttons: {
+			save: 'Сохранить',
+			cancel: 'Отмена',
+		},
+		toast: {
+			updated: 'Клиент обновлён',
+			updatedDetail: 'Изменения сохранены',
+			created: 'Клиент создан',
+			createdDetail: 'Новый клиент успешно добавлен',
+			error: 'Ошибка',
+			saveError: 'Не удалось сохранить клиента',
+			notFound: 'Клиент не найден',
+			redirectToList: 'Перенаправление на список клиентов',
+		},
+	},
+	status: {
+		all: 'Все статусы',
+		new: 'Новый',
+		active: 'Активный',
+		blocked: 'Заблокирован',
+	},
+	errors: {
+		loadClients: 'Ошибка загрузки клиентов',
+		createClient: 'Ошибка создания клиента',
+		updateClient: 'Ошибка обновления клиента',
+		deleteClient: 'Ошибка удаления клиента',
+	},
+} as const;
